@@ -18,4 +18,12 @@ $(function() {
         //Default is 75px, set to 0 for demo so any distance triggers swipe
         threshold:0
     });
+
+    $('.comics').slick({
+        lazyLoad: 'ondemand',
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        adaptiveHeight: true,
+        dots: false
+    });
 });
