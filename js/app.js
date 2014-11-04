@@ -7,7 +7,13 @@ $(function() {
     $(".display-comic").swipe( {
         //Generic swipe handler for all directions
         swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
-            $(this).text("You swiped " + direction );
+            var img = '';
+            if (direction == 'left') {
+                img = '<img class="" src="http://placehold.it/400x300&text=[left]"/>';
+            } else if (direction == 'right') {
+                img = '<img class="" src="http://placehold.it/400x300&text=[right]"/>';
+            }
+            $(this).html(img);
         },
         //Default is 75px, set to 0 for demo so any distance triggers swipe
         threshold:0

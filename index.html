@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation</title>
+    <title>LolGH</title>
     <link rel="stylesheet" href="stylesheets/app.css" />
       <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="bower_components/modernizr/modernizr.js"></script>
@@ -18,11 +18,13 @@
               </section>
 
               <section class="middle tab-bar-section">
-                  <h1 class="title">Foundation</h1>
+                  <h1 class="title">LolGH</h1>
               </section>
 
               <section class="right-small">
-                  <a class="right-off-canvas-toggle menu-icon" href="#"><span></span></a>
+                  <a class="right-off-canvas-toggle menu-icon" href="#">
+                      <span><i class="fa fa-angle-double-left fa-lg"></i></span>
+                  </a>
               </section>
           </nav>
 
@@ -31,7 +33,7 @@
                   <ul class="off-canvas-list">
                       <li><label>Menu</label></li>
                       <li><a href="/"><i class="fa fa-meh-o fa-fw"></i>&nbsp;Comics</a></li>
-                      <li><a href="/toon.tml"><i class="fa fa-video-camera fa-fw"></i>&nbsp;Toons</a></li>
+                      <li><a href="/toon.html"><i class="fa fa-video-camera fa-fw"></i>&nbsp;Toons</a></li>
                       <li><a href="/news.html"><i class="fa fa-home fa-fw"></i>&nbsp;News</a></li>
                       <li><a href="/contact.html"><i class="fa fa-comments-o fa-fw"></i>&nbsp;Contact</a></li>
                   </ul>
@@ -40,9 +42,10 @@
 
           <aside class="right-off-canvas-menu">
               <ul class="off-canvas-list">
-                  <li><label>Users</label></li>
-                  <li><a href="#">Hari Seldon</a></li>
-                  <li><a href="#">...</a></li>
+                  <li><label>Share</label></li>
+                  <li><a href="#"><i class="fa fa-facebook fa-fw"></i></a></li>
+                  <li><a href="#">Twitter</a></li>
+                  <li><a href="#">Youtube</a></li>
               </ul>
           </aside>
 
@@ -53,7 +56,7 @@
                           <div class="large-6 medium-6 small-12 columns">
                               <h4>"{{ comic.title }}" posted on {{ comic.releaseDate | date("D d.M.Y") }}</h4>
                           </div>
-                          <div class="large-6 medium-6 small-12 columns no-pad-right">
+                          <!--<div class="large-6 medium-6 small-12 columns no-pad-right">
                               <div class="comic-nav button-bar right">
                                   <ul class="button-group ">
                                       <li><a title="First episode" href="/comic/{{ first.comicId }}" class="small button secondary-btn {% if prev is empty %} secondary disabled {% endif %}"><i class="fa fa-angle-double-left fa-lg"></i></a></li>
@@ -63,7 +66,7 @@
                                       <li><a title="Random :)" href="/comic/{{ rand.comicId }}" class="small secondary-btn button"><i class="fa fa-refresh"></i></a></li>
                                   </ul>
                               </div>
-                          </div>
+                          </div>-->
                       </div>
                       <div class="row text-center display-comic" id="main-comic">
                           <!--<img src="http://lolgh.com/cms/content/lol_gh/{{ comic.url }}"/>-->
